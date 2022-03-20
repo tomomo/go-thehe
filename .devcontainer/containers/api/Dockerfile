@@ -15,4 +15,6 @@ COPY go.mod .
 COPY go.sum .
 RUN go mod download all
 # #
+
+# NOTE: 課題。起動も含めてしまいたいが、Webサーバーログが確認できなくなるので、ターミナルでairを実行する方法を取っている。
 # CMD ["air", "-c", ".air.toml"]
